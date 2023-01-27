@@ -24,7 +24,7 @@
 	/* Theme Layout */
 	--section-margin: 3rem;
 	--theme-grid-gap: 1rem;
-	--container-max-width: 1440px;
+	--container-max-width: 1080px;
 	--container-max-width-narrow: 960px;
 	--container-padding: 0 1rem;
 
@@ -64,7 +64,7 @@
 	/* Theme Layout */
 	--section-margin: 3rem;
 	--theme-grid-gap: 1rem;
-	--container-max-width: 1440px;
+	--container-max-width: 1080px;
 	--container-max-width-narrow: 960px;
 	--container-padding: 0 1rem;
 

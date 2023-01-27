@@ -9,73 +9,138 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
+			<h2>Service</h2>
 			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
+				なんのためにウェブサイトをつくるのでしょうか。作りたいと思う人それぞれに、目的があるはずです。
 			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
-				</FeatureCard>
-			</div>
+			<p>
+				お店の売上をあげたい。自社のことを知らせたい。新規のお客様に来てほしい。などなど。あなたの状況や目的に最適な、ホームページ制作、運用、ウェブを使った施策を提案します。
+			</p>
+			<p>
+				Web技術に明るくなくても大丈夫です。教員経験のあるそんほんすは、あなたの意識にあるキーワードから、適切に課題を導き出し、対応策をわかりやすくご説明いたします。あなたのお店・会社のウェブ担当のつもりでご相談ください。
+			</p>
+			<ul class="service__list">
+				<li class="service__item">
+					<figure class="service__image-wrapper">
+						<img src="/assets/images/home/service_website.svg" alt="" />
+					</figure>
+					<div class="service__text-block">
+						<h3 class="service__heading">ホームページ制作、改修、保守運用</h3>
+						<div class="service__desc">
+							お客様のビジネスの状況をききとり、ホームページ制作、改修、保守運用など行います。ホームページを開設するための方法もいろいろあります。それぞれのやり方のメリット、デメリットを考慮に入れて、提案をいたします。
+							<table>
+								<tr>
+									<td> ホームページ制作 オリジナルデザイン </td>
+									<td> 20万円〜 </td>
+								</tr>
+								<tr>
+									<td> ホームページ制作 テンプレート </td>
+									<td> 5万円〜 </td>
+								</tr>
+								<tr>
+									<td> 保守運用 </td>
+									<td> 1.5万円／月〜 </td>
+								</tr>
+								<tr>
+									<td> 改修、リニューアル等 </td>
+									<td> 都度お見積り </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class="service__item">
+					<figure class="service__image-wrapper">
+						<img src="/assets/images/home/service_sns.svg" alt="" />
+					</figure>
+					<div class="service__text-block">
+						<h3 class="service__heading">
+							MEO/SEO対策、SNS運用代行、コンサルティング
+						</h3>
+						<div class="service__desc">
+							LINE、インスタなどのSNS、SEO,MEOなどの検索への対策など、ウェブ技術を活用した集客のお手伝いをいたします。サイトとの連動など総合的に状況を判断して、効果的な施策を提案、代行等いたします。ときには、オフライン施策も含めてのご提案もいたします。代表のそんほんすが対応するので、フットワーク軽く様々なご相談をお受けいたします。
+							<table>
+								<tr>
+									<td> MEO対策 </td>
+									<td> 1万円／月〜 </td>
+								</tr>
+								<tr>
+									<td> SNS施策コンサル </td>
+									<td> 2万円／月〜 </td>
+								</tr>
+								<tr>
+									<td> SNS運用代行 </td>
+									<td> 3万円／月〜 </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</section>
 	</Container>
 
 	<Container>
 		<section class="feature-card__section">
-			<h2>Company Pages</h2>
-			<p>
-				Use one of our prebuilt company pages for your about page, contact page,
-				legal pages, blog posts, etc.
-			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
-				</FeatureCard>
-				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
-				</FeatureCard>
-				<FeatureCard
-					href="/blog/posts/remote-work-mental-health"
-					title="Blog Post"
-          imgSrc="/assets/images/home/screenshots/blog-post"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal"
-					title="Legal Page"
-				>
-				</FeatureCard>
-			</div>
+			<h2>Works</h2>
+			<p>WEBSONの制作・活動実績をご紹介します。</p>
+			<ul class="work-list">
+				<li class="work-item">
+					<figure class="work-image">
+						<img src="/assets/images/home/const-company_mockuper.png" alt="" />
+					</figure>
+					<h3 class="work-title">架空の建設会社</h3>
+					<p class="work-desc">
+						Photohopデザインカンプからコーディング。トップページではスライダー＋アニメーションを実装しました。
+					</p>
+				</li>
+				<li class="work-item">
+					<figure class="work-image">
+						<img src="/assets/images/home/const-company_mockuper.png" alt="" />
+					</figure>
+					<h3 class="work-title">架空の建設会社</h3>
+					<p class="work-desc">
+						Photohopデザインカンプからコーディング。トップページではスライダー＋アニメーションを実装しました。
+					</p>
+				</li>
+				<li class="work-item">
+					<figure class="work-image">
+						<img src="/assets/images/home/const-company_mockuper.png" alt="" />
+					</figure>
+					<h3 class="work-title">架空の建設会社</h3>
+					<p class="work-desc">
+						Photohopデザインカンプからコーディング。トップページではスライダー＋アニメーションを実装しました。
+					</p>
+				</li>
+			</ul>
 		</section>
 	</Container>
-
 	<Container>
 		<section class="feature-card__section">
-			<h2>Theme Pages</h2>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
-			<div class="feature-card__grid">
-				<FeatureCard
-					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				>
-				</FeatureCard>
+			<h2>About Son Hongsu</h2>
+			<div class="about">
+				<figure class="about__image">
+					<img src="/assets/images/icon.png" alt="" />
+				</figure>
+				<p>
+					２０１９年春頃から本格的にプログラミングやウェブ制作の学習にとりくみはじめました。教員経験を通して培ってきたコミュニケーション力や課題解決力をウェブ制作事業によって社会に還元したいという思いが募り、現在副業でウェブ制作・開発にとりくんでいます。
+				</p>
 			</div>
 		</section>
 	</Container>
 </Layout>
 
 <style>
+	ul {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.work-list {
+		display: flex;
+		gap: 5%;
+	}
+
 	.feature-card__section {
 		margin: var(--section-margin) auto;
 	}
@@ -88,5 +153,35 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 		.feature-card__grid {
 			grid-template-columns: 1fr;
 		}
+	}
+	.service__item {
+		display: flex;
+		gap: 5%;
+	}
+
+	.service__item + li {
+		margin-top: 80px;
+	}
+	.service__image-wrapper {
+		flex: 1;
+	}
+	.service__text-block {
+		flex: 3;
+	}
+	@media (max-width: 768px) {
+		.service__item {
+			flex-direction: column-reverse;
+		}
+		.service__image-wrapper,
+		.service__text-block {
+			flex: 1;
+		}
+	}
+	.about {
+		display: flex;
+		gap: 5%;
+	}
+	.about__image {
+		width: 400px;
 	}
 </style>
