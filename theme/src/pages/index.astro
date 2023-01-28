@@ -3,6 +3,7 @@ import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import { work } from '../config/work';
 ---
 
 <Layout>
@@ -85,33 +86,19 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 			<h2>Works</h2>
 			<p>WEBSONの制作・活動実績をご紹介します。</p>
 			<ul class="work-list">
-				<li class="work-item">
+				{
+					work.map((item)=>(
+					<li class="work-item">
 					<figure class="work-image">
-						<img src="/assets/images/home/const-company_mockuper.png" alt="" />
+						<img src={`/assets/images/works/${item.imageUrl}.png`} alt="" />
 					</figure>
-					<h3 class="work-title">架空の建設会社</h3>
+					<h3 class="work-title">{item.title}</h3>
 					<p class="work-desc">
-						Photohopデザインカンプからコーディング。トップページではスライダー＋アニメーションを実装しました。
+						{item.desc}
 					</p>
 				</li>
-				<li class="work-item">
-					<figure class="work-image">
-						<img src="/assets/images/home/const-company_mockuper.png" alt="" />
-					</figure>
-					<h3 class="work-title">架空の建設会社</h3>
-					<p class="work-desc">
-						Photohopデザインカンプからコーディング。トップページではスライダー＋アニメーションを実装しました。
-					</p>
-				</li>
-				<li class="work-item">
-					<figure class="work-image">
-						<img src="/assets/images/home/const-company_mockuper.png" alt="" />
-					</figure>
-					<h3 class="work-title">架空の建設会社</h3>
-					<p class="work-desc">
-						Photohopデザインカンプからコーディング。トップページではスライダー＋アニメーションを実装しました。
-					</p>
-				</li>
+					))
+				}
 			</ul>
 		</section>
 	</Container>
@@ -138,7 +125,12 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 
 	.work-list {
 		display: flex;
-		gap: 5%;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+	.work-item{
+		width: 30%;
 	}
 
 	@media (max-width: 768px) {
