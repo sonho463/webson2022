@@ -13,23 +13,23 @@ const themes = [
 	{
 		name: 'default',
 		icon: classicThemeIcon,
-		label: '架空の建設会社',
+		label: '英会話＋fitness',
 	},
 	{
 		name: 'dark',
 		icon: darkThemeIcon,
-		label: '英会話＋fitness',
+		label: '架空の建設会社',
 	},
 	{
 		name: 'earth',
 		icon: earthThemeIcon,
 		label: '英会話スクール',
 	},
-	{
-		name: 'ocean',
-		icon: blueThemeIcon,
-		label: '英会話スクール',
-	},
+	// {
+	// 	name: 'ocean',
+	// 	icon: blueThemeIcon,
+	// 	label: 'BlueLeadPartners様',
+	// },
 ];
 
 @customElement('theme-switcher')
@@ -101,10 +101,10 @@ export class ThemeSwitcher extends LitElement {
 			'#home-hero-image'
 		) as HTMLImageElement;
 		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/const-company_mockuper.png';
+			_heroImage.src = '/assets/images/home/eng_mockup.png';
 		}
 		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/eng_mockup.png';
+			_heroImage.src = '/assets/images/home/const-company_mockuper.png';
 		}
 		if (theme === 'earth') {
 			_heroImage.src = '/assets/images/home/eng-sch_mockup.png';

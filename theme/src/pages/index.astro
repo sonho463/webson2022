@@ -10,7 +10,28 @@ import { work } from '../config/work';
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
-			<h2>Service</h2>
+			<h2>制作実績</h2>
+			<p>WEBSONの制作実績をご紹介します。</p>
+			<ul class="work-list">
+				{
+					work.map((item)=>(
+					<li class="work-item">
+					<figure class="work-image">
+						<img src={`/assets/images/works/${item.imageUrl}.png`} alt="" />
+					</figure>
+					<h3 class="work-title">{item.title}</h3>
+					<p class="work-desc">
+						{item.desc}
+					</p>
+				</li>
+					))
+				}
+			</ul>
+		</section>
+	</Container>
+	<Container>
+		<section class="feature-card__section">
+			<h2>サービス</h2>
 			<p>
 				なんのためにウェブサイトをつくるのでしょうか。作りたいと思う人それぞれに、目的があるはずです。
 			</p>
@@ -56,21 +77,21 @@ import { work } from '../config/work';
 					</figure>
 					<div class="service__text-block">
 						<h3 class="service__heading">
-							MEO/SEO対策、SNS運用代行、コンサルティング
+							MEO対策、SNS運用コンサル
 						</h3>
 						<div class="service__desc">
 							LINE、インスタなどのSNS、SEO,MEOなどの検索への対策など、ウェブ技術を活用した集客のお手伝いをいたします。サイトとの連動など総合的に状況を判断して、効果的な施策を提案、代行等いたします。ときには、オフライン施策も含めてのご提案もいたします。代表のそんほんすが対応するので、フットワーク軽く様々なご相談をお受けいたします。
 							<table>
+								<tr>
+									<td> MEO初期構築（Googleマイビジネス） </td>
+									<td> 5万円〜 </td>
+								</tr>
 								<tr>
 									<td> MEO対策 </td>
 									<td> 1万円／月〜 </td>
 								</tr>
 								<tr>
 									<td> SNS施策コンサル </td>
-									<td> 2万円／月〜 </td>
-								</tr>
-								<tr>
-									<td> SNS運用代行 </td>
 									<td> 3万円／月〜 </td>
 								</tr>
 							</table>
@@ -81,30 +102,10 @@ import { work } from '../config/work';
 		</section>
 	</Container>
 
+
 	<Container>
 		<section class="feature-card__section">
-			<h2>Works</h2>
-			<p>WEBSONの制作・活動実績をご紹介します。</p>
-			<ul class="work-list">
-				{
-					work.map((item)=>(
-					<li class="work-item">
-					<figure class="work-image">
-						<img src={`/assets/images/works/${item.imageUrl}.png`} alt="" />
-					</figure>
-					<h3 class="work-title">{item.title}</h3>
-					<p class="work-desc">
-						{item.desc}
-					</p>
-				</li>
-					))
-				}
-			</ul>
-		</section>
-	</Container>
-	<Container>
-		<section class="feature-card__section">
-			<h2>About Son Hongsu</h2>
+			<h2>そんほんすについて</h2>
 			<div class="about">
 				<figure class="about__image">
 					<img src="/assets/images/icon.png" alt="" />
@@ -123,6 +124,17 @@ import { work } from '../config/work';
 		list-style-type: none;
 	}
 
+	table,tr,td{
+		border: 1px solid #333;
+		text-align: center;
+	}
+	table{
+		width: 80%;
+		margin-top: 48px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	.work-list {
 		display: flex;
 		justify-content: space-between;
@@ -130,7 +142,10 @@ import { work } from '../config/work';
 		flex-wrap: wrap;
 	}
 	.work-item{
-		width: 30%;
+		width: 45%;
+	}
+	p.work-desc{
+		text-align: justify;
 	}
 
 	@media (max-width: 768px) {

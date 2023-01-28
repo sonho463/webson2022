@@ -77,8 +77,9 @@
 	--theme-primary: hsl(0, 0%, 100%);
 	--theme-primary-hover: hsl(0, 0%, 90%);
 	--theme-on-primary: hsl(0, 0%, 0%);
+	/* --theme-on-primary: pink; */
 
-	--theme-bg: hsl(0, 0%, 2%);
+	--theme-bg: #4b6cb7;
 	--theme-on-bg: hsl(0, 0%, 100%);
 
 	--theme-surface-1: hsl(0, 0%, 20%);
@@ -94,8 +95,8 @@
 
 [data-theme='earth'] {
 	/* Theme Colors */
-	--theme-primary: #2c3e2d;
-	--theme-primary-hover: #395a3b;
+	--theme-primary: #1B224C;
+	--theme-primary-hover: #1B224C;
 	--theme-on-primary: hsl(0, 0%, 100%);
 
 	--theme-bg: #eeeff1;
